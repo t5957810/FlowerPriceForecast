@@ -5,7 +5,7 @@
         <mat-card-header>
           <mat-card-title>花市歷史價格列表</mat-card-title>
         </mat-card-header>
-        <mat-card-content>
+        <mat-card-content style="overflow: auto;">
           <ng-container *ngIf="priceAnthuriumLo$ | async"></ng-container>
           <div class="fixHeader">
             <table mat-table matSort [dataSource]="dataSource">
